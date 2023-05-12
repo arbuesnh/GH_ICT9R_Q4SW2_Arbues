@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Conversion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Conversion</h1>
+        <form>
+            <div class="form-group">
+                <label for="time-type">Select time type:</label>
+                <select class="form-control" id="time-type">
+                    <option value="seconds">Seconds</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days">Days</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time-value">Enter time value:<span class="time-value-label"></span></label>
+                <input type="number" class="form-control" id="time-value">
+            </div>
+            <button type="button" class="btn btn-success" onclick="convertTime()">Convert</button>            
+            <button type="button" class="btn btn-danger" onclick="clearResults()">Clear</button>
+        </form>
+        <hr>
+        <h2>Results:</h2>
+        <div class="form-group">
+            <label for="resultSeconds">Seconds:</label>
+            <input type="number" class="form-control" id="resultSeconds" readonly>
+        </div>
+        <div class="form-group">
+            <label for="resultMinutes">Minutes:</label>
+            <input type="number" class="form-control" id="resultMinutes" readonly>
+        </div>
+        <div class="form-group">
+            <label for="resultHours">Hours:</label>
+            <input type="number" class="form-control" id="resultHours" readonly>
+        </div>
+        <div class="form-group">
+            <label for="resultDays">Days:</label>
+            <input type="number" class="form-control" id="resultDays" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
